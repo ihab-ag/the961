@@ -14,7 +14,7 @@ const ScreenWrapper: FunctionComponent<PropsWithChildren> = ({ children }) => {
     }, [selectedScreenIndex])
     return (
         <View style={{
-            flex: 1
+            flex: 1,
         }}>
             {children}
         </View>

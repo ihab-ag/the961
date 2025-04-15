@@ -12,3 +12,8 @@ export interface BottomtabScreen extends Screen {
     icon: ImageRequireSource,
     index: number,
 }
+
+export interface TopTabScreen extends Screen {
+    image?: ImageRequireSource,
+    index: number,
+}
