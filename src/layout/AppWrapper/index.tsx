@@ -16,12 +16,6 @@ const AppWrapper: FunctionComponent<PropsWithChildren> = ({ children }) => {
                 ? colors.white
                 : colors.black,
         }}>
-            <View style={{
-                backgroundColor: bottomtabScreens[selectedScreenIndex].theme == ETheme.light
-                ? colors.white
-                : colors.black,
-                height: Platform.OS === 'android' ? StatusBarManager.getConstants().HEIGHT : 0,
-            }} />
             {children}
         </SafeAreaView>
     )

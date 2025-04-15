@@ -29,9 +29,10 @@ const NewsScreen = () => {
                 setIndex={setIndex}
                 screens={newsTabsScreens} />
             <FlatList
+                showsHorizontalScrollIndicator={false}
                 ref={flatListRef}
                 onMomentumScrollEnd={(event) => {
-                    const newIndex = event.nativeEvent.contentOffset.x / SCREEN_WIDTH
+                    const newIndex = Math.round(event.nativeEvent.contentOffset.x / SCREEN_WIDTH)
                     setIndex(newIndex)
                 }}
                 getItemLayout={(_, index) => ({
