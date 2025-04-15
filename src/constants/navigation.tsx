@@ -20,7 +20,7 @@ export const bottomtabScreens: BottomtabScreen[] = [
     {
         name: 'Deals',
         icon: icons.deals,
-        component: DealsScreen,
+        component: () => <DealsScreen />,
         index: 1,
         theme: ETheme.light
     },
@@ -66,29 +66,29 @@ export const newsTabsScreens: TopTabScreen[] = [
 export const pulseTabsScreens: TopTabScreen[] = [
     {
         name: 'Following',
-        component: () => <PulseItemScreen name={'Live'} />,
+        component: () => <PulseItemScreen />,
         index: 0
     },
     {
         name: 'For You',
-        component: () => <PulseItemScreen name={'Politics'} />,
+        component: () => <PulseItemScreen />,
         index: 1
     },
     {
         name: 'News',
         
-        component: () => <PulseItemScreen name={'Pepsi'} />,
+        component: () => <PulseItemScreen />,
         index: 2
     },
     {
         name: 'Eat & Drink',
-        component: () => <PulseItemScreen name={'Business'} />,
+        component: () => <PulseItemScreen />,
         index: 3
     },
     {
         name: 'Pepsi',
         image: images.pepsiAdLogo,
-        component: () => <PulseItemScreen name={'Pepsi'} />,
+        component: () => <PulseItemScreen />,
         index: 4
     },
 ]

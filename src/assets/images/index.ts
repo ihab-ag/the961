@@ -7,4 +7,6 @@ export default {
     "deals": require('./deals.png'),
     "avatar": require('./avatar.png'),
     "ad": require('./ad.png'),
+    "promo": require('./promo.png'),
+    "961DealsLogo": require('./961Deals-logo.png'),
 }
